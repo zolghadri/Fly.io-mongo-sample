@@ -1,0 +1,21 @@
+primary_region = "fra"
+
+
+[services]
+  internal_port = 27017
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 27017
+    proccess = ["app"]
+
+
+[mount]
+  source = 'mongo_data'
+  destination = '/data/db'
+  
+[vm]
+  memory = "2gb"
+  cpus = 1
+  cpu_kind = "shared"
