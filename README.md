@@ -12,7 +12,7 @@ Logged in to your account using `fly auth login`.
 ```fly apps create <AppName>```
 
 ### 2. Set your mongo credentials
-```fly secrets set MONGO_INIT_ROOT_USERNAME=<Username> MONGO_INIT_ROOT_PASSWORD=<Password> MONGO_INIT_ROOT_DATABASE=<DbName>  --app <AppName>```
+```fly secrets set MONGO_INITDB_ROOT_USERNAME=<Username> MONGO_INITDB_ROOT_PASSWORD=<Password> MONGO_INITDB_DATABASE=<DbName>  --app <AppName>```
 
 ### 3.Deploy your files
 ```fly deploy --app <AppName>```
